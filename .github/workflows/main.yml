@@ -1,1 +1,17 @@
+on:
+  push:
+    branches:
+      - jana
 
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'Tessting Github action'
+        run: pwd
+      - name: 'Tessting printing'
+        run: echo "basant"
