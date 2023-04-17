@@ -11,8 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'before folder contents'
-        run: ls
+  
       - uses: actions/checkout@v3
-      - name: 'after folder contents'
-        run: ls
+      - name: "login to docker hub"
+        run: docker login --username basant9 --password dckr_pat_1nUCXOT2EepxJH-zgETIPCrrdgA
